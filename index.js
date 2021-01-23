@@ -25,8 +25,13 @@ items.addEventListener("mouseleave", function () {
 });
 
 fas.onclick = function () {
-  localStorage.setItem("star", "1");
-  stars.innerText = `⭐ ${localStorage.getItem("star")}`;
+  if (localStorage.getItem("star") === "1") {
+    localStorage.setItem("star", "0");
+    stars.innerText = `⭐ ${localStorage.getItem("star")}`;
+  } else {
+    localStorage.setItem("star", "1");
+    stars.innerText = `⭐ ${localStorage.getItem("star")}`;
+  }
 };
 
 aboutFotos.onclick = function () {
