@@ -24,12 +24,22 @@ a:hover {
 }
 
 nav {
-  background: linear-gradient(#6689bb, #84a7db, #6689bb);
+  background: linear-gradient(#6689bb, #7a9dd1, #6689bb);
   color: white;
   display: flex;
   height: 40px;
   align-items: center;
   justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d4e1f5;
+  cursor: pointer;
 }
 
 nav > div {
@@ -55,8 +65,10 @@ nav strong {
   background-color: #607fac;
   border-radius: 5px;
   height: 27px;
-  width: 205px;
+  width: 200px;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .input input {
@@ -70,14 +82,14 @@ input:focus {
 }
 
 .lupa {
-  width: 15px;
+  height: 15px;
   margin-left: 5px;
 }
 
 .logo {
   width: 80px;
   background: linear-gradient(#dfdfdf, #ffffff, #c2c2c2);
-  padding: 8px 15px;
+  padding: 8px 15px 8px 12px;
   margin-left: 20px;
   box-shadow: 9px 9px 4px -8px #6e6e6e;
   box-shadow: inset 0 0 2px #636363;
@@ -100,8 +112,7 @@ main {
   grid-area: profile;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 9px 9px 4px -8px #d4d4d4;
-  box-shadow: inset 0 0 2px #d4d4d4;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
   padding: 20px 15px;
 }
 
@@ -144,8 +155,7 @@ main {
   grid-area: about;
   background-color: white;
   border-radius: 8px 50px 8px 8px;
-  box-shadow: 9px 9px 4px -8px #d4d4d4;
-  box-shadow: inset 0 0 2px #d4d4d4;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
 }
 
 .about img {
@@ -195,6 +205,11 @@ main {
   display: flex;
 }
 
+.about-items a {
+  text-decoration: none;
+  color: black;
+}
+
 .items {
   display: flex;
   flex-direction: column;
@@ -205,14 +220,20 @@ main {
   border-bottom: 1.5px solid #a5a5a5;
 }
 
+#recados,
+#aboutFotos,
+#aboutVideos,
+#fas {
+  cursor: pointer;
+}
+
 /* projects  */
 
 .projects {
   grid-area: projects;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 9px 9px 4px -8px #d4d4d4;
-  box-shadow: inset 0 0 2px #d4d4d4;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
 }
 
 .the-projects {
@@ -263,8 +284,7 @@ main {
   grid-area: comunities;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 9px 9px 4px -8px #d4d4d4;
-  box-shadow: inset 0 0 2px #d4d4d4;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
 }
 
 .comunities h4 {
@@ -301,4 +321,69 @@ main {
 .community a:hover {
   color: #08070f;
   cursor: pointer;
+}
+
+/* LEGENDA */
+
+.legenda-none {
+  display: none;
+}
+
+.legenda {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+  background-color: #d4e1f0;
+  border: 6px solid white;
+  border-bottom: 0;
+  padding: 5px;
+  position: fixed;
+  width: 300px;
+  box-shadow: inset 0.7px 0.7px 4px #bad6e0;
+}
+
+.legenda h5 {
+  background-color: #e4efff;
+  height: 25px;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+}
+
+.inner div {
+  margin: 10px 5px;
+}
+
+.inner {
+  background-color: #d4e1f0;
+  border: 1px solid #bdcada;
+  border-bottom: 0;
+  height: 300px;
+  margin-bottom: 0;
+  padding: 2px;
+  box-shadow: inset 0.7px 0.7px 4px #cad8dd;
+}
+
+/* POPUPS */
+
+.fotos-popup,
+.videos-popup,
+.depo-popup {
+  display: none;
+}
+
+.fotos-popup-block,
+.videos-popup-block,
+.depo-popup-block {
+  display: block;
+  position: absolute;
+  color: #304f7a;
+  font-weight: bold;
+  background-color: #d4e1f0;
+  padding: 50px;
+  border: 7px solid #fafafa;
+  top: 35%;
+  left: 50%;
+  margin-left: -120px;
 }

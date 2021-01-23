@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Orkutfólio</title>
+    <title>OrkutFólio</title>
   </head>
   <body>
     <header>
       <nav>
         <div>
             <img class="logo" src="images/orkut-logo.png"/>
-          <p>Início</p>
-          <p>Página de recados</p>
+          <p><a href="#">Início</a></p>
+          <p><a href="mailto:berger.thalia@gmail.com">Página de recados</a></p>
         </div>
         <div>
           <p><strong>berger.thalia@gmail.com</strong></p>
           <p>Sair</p>
           <div class="input">
-            <input placeholder="pesquisa do OrkutFólio">
-            <a target="_blank" href="http://google.com.br/"><img class="lupa" src="images/lupa.png"/></a>
+            <input id="input" placeholder="pesquisa do OrkutFólio">
+            <a id="input-link" target="_blank" href="http://google.com.br/"><img class="lupa" src="images/lupa.png"/></a>
         </div>
      
         </div>
@@ -38,27 +38,47 @@
         <div class="profile-tags">
           <p>🙍 perfil</p>
           <a href="mailto:berger.thalia@gmail.com"><p>📝 recados</p></a>
-          <p>📷 fotos</p>
-          <p>📹 videos</p>
-          <p>🌞 depoimentos</p>
+          <p id="profile-fotos">📷 fotos</p>
+          <p id="profile-videos">📹 videos</p>
+          <p id="profile-depo">🌞 depoimentos</p>
         </div>
       </section>
       <section class="about">
         <h3>Thalía Berger</h3>
         <hr />
         <div class="about-items">
+          <a href="mailto:berger.thalia@gmail.com">
+               <div id="recados" class="items">
+            <p><small>recados</small></p>
+            <p>📝 0</p>
+          </a>
+        </div>
+        <div id="aboutFotos" class="items">
+          <p><small>fotos</small></p>
+          <p>📷 0</p>
+      </div>
+      <div id="aboutVideos" class="items">
+        <p><small>videos</small></p>
+        <p>📹 0</p>
+    </div>
+    <div id="fas" class="items">
+      <p><small>fãs</small></p>
+      <p id="stars">⭐ 0</p>
+  </div>
+  <div id="items">
         <div class="items">
-            <p>confiável</p>
+            <p><small>confiável</small></p>
             <p>🙂🙂🙂</p>
         </div>
         <div class="items">
-            <p>legal</p>
-            <p>💠💠💠</p>
+            <p><small>legal</small></p>
+            <p>🟦🟦🟦</p>
         </div>
         <div class="items">
-            <p>justa e paciente</p>
+            <p><small>justa e paciente</small></p>
             <p>💗💗💗</p>
         </div>
+      </div>
     </div>
         <hr />
         <p><strong>social</strong></p>
@@ -149,5 +169,38 @@
         </div>
       </section>
     </main>
+    <div id="legendaID" class="legenda-none">
+      <div class="inner">
+      <h5>legenda</h5>
+      <div>
+        <p>⭐ sou fã</p>
+      </div>
+      <div>
+        <p>🙂⚪⚪ confiável</p>
+        <p>🙂🙂⚪ muito confiável</p>
+        <p>🙂🙂🙂 super confiável</p>
+      </div>
+      <div>
+        <p>🟦⬜⬜ legal</p>
+        <p>🟦🟦⬜ muito legal</p>
+        <p>🟦🟦🟦 super legal</p>
+      </div>
+      <div>
+        <p>💗🤍🤍 justa e paciente</p>
+        <p>💗💗🤍 muito justa e paciente</p>
+        <p>💗💗💗 super justa e paciente</p>
+      </div>
+    </div>
+    </div>
+    <div class="fotos-popup" id="fotosPopup">
+      <p>Nenhuma foto disponível.</p>
+    </div>
+    <div class="videos-popup" id="videosPopup">
+      <p>Nenhum video disponível.</p>
+    </div>
+    <div class="depo-popup" id="depoPopup">
+      <p>Nenhum depoimento por aqui 😔</p>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
