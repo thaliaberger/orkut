@@ -101,8 +101,8 @@ main {
   grid-template-areas:
     "profile about projects"
     "profile about projects"
-    "profile ..... comunities"
-    "....... ..... comunities";
+    "profile ..... communities"
+    "....... ..... communities";
   grid-row-end: span 3;
   gap: 10px;
   margin: 20px;
@@ -278,23 +278,17 @@ main {
   margin-left: 10px;
 }
 
-/* COMUNITIES */
+/* communities */
 
-.comunities {
-  grid-area: comunities;
+.communities {
+  grid-area: communities;
   background-color: white;
   border-radius: 8px;
   box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
 }
 
-.comunities h4 {
+.communities h4 {
   margin: 10px 15px;
-}
-
-.comunities > div {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
 }
 
 .community {
@@ -321,6 +315,18 @@ main {
 .community a:hover {
   color: #08070f;
   cursor: pointer;
+}
+
+.ver-mais {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.the-communities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 5px;
+  gap: 5px 0px;
 }
 
 /* LEGENDA */
@@ -386,4 +392,5 @@ main {
   top: 35%;
   left: 50%;
   margin-left: -120px;
+  position: fixed;
 }

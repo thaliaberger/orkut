@@ -25,7 +25,8 @@ items.addEventListener("mouseleave", function () {
 });
 
 fas.onclick = function () {
-  stars.innerText = "⭐ 1";
+  localStorage.setItem("star", "1");
+  stars.innerText = `⭐ ${localStorage.getItem("star")}`;
 };
 
 aboutFotos.onclick = function () {
@@ -68,4 +69,10 @@ depo.onclick = function () {
   setTimeout(function () {
     depoPopup.setAttribute("class", "depo-popup");
   }, 2000);
+};
+
+window.onload = () => {
+  if (localStorage.hasOwnProperty("star")) {
+    stars.innerText = `⭐ ${localStorage.getItem("star")}`;
+  }
 };
