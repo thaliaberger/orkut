@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #d8e5f7;
+  font-family: "Noto Sans", sans-serif;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1.5px solid #ececec;
+}
+
+a {
+  color: #007bac;
+}
+
+a:hover {
+  color: #08070f;
+  cursor: pointer;
+}
+
+nav {
+  background: linear-gradient(#6689bb, #84a7db, #6689bb);
+  color: white;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > div {
+  display: flex;
+}
+
+nav p {
+  margin: 0 15px;
+  align-self: center;
+  font-size: 0.9em;
+}
+
+nav p:hover {
+  color: #d4e1f5;
+  cursor: pointer;
+}
+
+nav strong {
+  color: #304f7a;
+}
+
+.input {
+  background-color: #607fac;
+  border-radius: 5px;
+  height: 27px;
+  width: 205px;
+  margin-right: 20px;
+}
+
+.input input {
+  border: 0;
+  margin-left: 7px;
+  height: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.lupa {
+  width: 15px;
+  margin-left: 5px;
+}
+
+.logo {
+  width: 80px;
+  background: linear-gradient(#dfdfdf, #ffffff, #c2c2c2);
+  padding: 8px 15px;
+  margin-left: 20px;
+  box-shadow: 9px 9px 4px -8px #6e6e6e;
+  box-shadow: inset 0 0 2px #636363;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas:
+    "profile about projects"
+    "profile about projects"
+    "profile ..... comunities"
+    "....... ..... comunities";
+  grid-row-end: span 3;
+  gap: 10px;
+  margin: 20px;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 9px 9px 4px -8px #d4d4d4;
+  box-shadow: inset 0 0 2px #d4d4d4;
+  padding: 20px 15px;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.blue {
+  color: #276983;
+}
+
+.profile small {
+  color: #8b8b8b;
+}
+
+.profile-tags p {
+  color: #505050;
+  background-color: #f5f8ff;
+  border: 1px solid #e0e0e0;
+  padding-left: 5px;
+}
+
+.profile p:hover {
+  color: #08070f;
+  cursor: pointer;
+}
+
+.profile hr {
+  margin: 5px 0;
+}
+
+.profile a {
+  text-decoration: none;
+  color: #007bac;
+}
+
+/* ABOUT */
+
+.about {
+  grid-area: about;
+  background-color: white;
+  border-radius: 8px 50px 8px 8px;
+  box-shadow: 9px 9px 4px -8px #d4d4d4;
+  box-shadow: inset 0 0 2px #d4d4d4;
+}
+
+.about img {
+  width: 200px;
+}
+
+.about h3 {
+  padding: 10px 15px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.about strong {
+  color: white;
+  background: linear-gradient(#5e88c3, #779ace, #5e88c3);
+  padding: 2px 7px;
+  border-radius: 5px 5px 0 0;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.about div {
+  display: flex;
+  margin: 0 10px;
+}
+
+.grey {
+  color: #666666;
+  width: 200px;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.dark-blue {
+  background-color: #dceefd;
+}
+
+.light-blue {
+  background-color: #eef8fe;
+}
+
+.about hr {
+  margin: 0 10px;
+}
+
+.about-items {
+  display: flex;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.darker {
+  border-bottom: 1.5px solid #a5a5a5;
+}
+
+/* projects  */
+
+.projects {
+  grid-area: projects;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 9px 9px 4px -8px #d4d4d4;
+  box-shadow: inset 0 0 2px #d4d4d4;
+}
+
+.the-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 5px;
+  gap: 5px 0px;
+}
+
+.projects h4 {
+  margin: 10px 15px;
+}
+
+.project {
+  background-color: #f3f3f3;
+  width: 120px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 110px;
+  margin: 5px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #007bac;
+  text-align: center;
+  height: 50px;
+}
+
+.project a:hover {
+  color: #08070f;
+  cursor: pointer;
+}
+
+.ver-todos {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* COMUNITIES */
+
+.comunities {
+  grid-area: comunities;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 9px 9px 4px -8px #d4d4d4;
+  box-shadow: inset 0 0 2px #d4d4d4;
+}
+
+.comunities h4 {
+  margin: 10px 15px;
+}
+
+.comunities > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.community {
+  background-color: #f3f3f3;
+  width: 120px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.community img {
+  width: 110px;
+  margin: 5px;
+}
+
+.community a {
+  text-decoration: none;
+  color: #007bac;
+  text-align: center;
+  height: 70px;
+}
+
+.community a:hover {
+  color: #08070f;
+  cursor: pointer;
+}
