@@ -99,12 +99,14 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-areas:
-    "profile about projects"
-    "profile about projects"
-    "profile ..... communities"
-    "....... ..... communities"
-    "....... ..... communities";
-  grid-row-end: span 3;
+    "profile    about        projects"
+    "profile    about        projects"
+    "profile    fotos        communities"
+    "........    fotos        communities"
+    "........   videos       communities"
+    "........   videos       communities"
+    ".......    depoimentos   communities"
+    ".......    depoimentos   .";
   gap: 10px;
   margin: 20px;
 }
@@ -186,7 +188,7 @@ main {
 
 .grey {
   color: #666666;
-  width: 200px;
+  min-width: 200px;
   text-align: end;
   padding-right: 10px;
 }
@@ -397,4 +399,68 @@ main {
   left: 50%;
   margin-left: -120px;
   position: fixed;
+}
+
+/* FOTOS, VIDEOS, DEPOIMENTOS */
+
+.fotos {
+  grid-area: fotos;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  padding: 20px 15px;
+}
+
+.videos {
+  grid-area: videos;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  padding: 20px 15px;
+}
+
+.depoimentos {
+  grid-area: depoimentos;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  padding: 20px 15px;
+}
+
+.fotos h4,
+.videos h4,
+.depoimentos h4 {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.right {
+  transform: rotate(270deg);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bottom {
+  transform: rotate(0deg);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+h4 a {
+  margin-left: 5px;
+}
+
+.fotos div,
+.videos div,
+.depoimentos div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fotos a,
+.videos a,
+.depoimentos a {
+  margin-left: 5px;
+  font-weight: bold;
 }
