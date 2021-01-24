@@ -100,7 +100,7 @@ main {
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-areas:
     "profile    about        projects"
-    "profile    about        projects"
+    "profile    about        communities"
     "profile    fotos        communities"
     "........    fotos        communities"
     "........   videos       communities"
