@@ -59,6 +59,7 @@ nav p:hover {
 
 nav strong {
   color: #304f7a;
+  cursor: text;
 }
 
 .input {
@@ -106,7 +107,7 @@ main {
     "........   videos       communities"
     "........   videos       communities"
     ".......    depoimentos   communities"
-    ".......    depoimentos   .";
+    ".......    depoimentos   ..........";
   gap: 10px;
   margin: 20px;
 }
@@ -381,13 +382,15 @@ main {
 
 .fotos-popup,
 .videos-popup,
-.depo-popup {
+.depo-popup,
+.bolo-popup {
   display: none;
 }
 
 .fotos-popup-block,
 .videos-popup-block,
-.depo-popup-block {
+.depo-popup-block,
+.bolo-popup-block {
   display: block;
   position: absolute;
   color: #304f7a;
