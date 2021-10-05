@@ -184,7 +184,7 @@ main {
 
 .about div {
   display: flex;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .grey {
@@ -192,6 +192,18 @@ main {
   min-width: 200px;
   text-align: end;
   padding-right: 10px;
+}
+
+.dark-light-info {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 140px);
+}
+
+.dark-light-info div {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .dark-blue {
@@ -256,7 +268,6 @@ main {
 
 .project {
   background-color: #f3f3f3;
-  width: 120px;
   margin: 0 5px;
   display: flex;
   flex-direction: column;
@@ -264,7 +275,7 @@ main {
 }
 
 .project img {
-  width: 110px;
+  width: calc(100% - 10px);
   margin: 5px;
 }
 
@@ -300,7 +311,6 @@ main {
 
 .community {
   background-color: #f3f3f3;
-  width: 120px;
   margin: 0 5px;
   display: flex;
   flex-direction: column;
@@ -308,7 +318,7 @@ main {
 }
 
 .community img {
-  width: 110px;
+  width: calc(100% - 10px);
   margin: 5px;
 }
 
@@ -466,4 +476,63 @@ h4 a {
 .depoimentos a {
   margin-left: 5px;
   font-weight: bold;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    grid-template-columns: 95%;
+    justify-content: center;
+    grid-template-areas:
+      "profile"
+      "about"
+      "projects"
+      "communities"
+      "fotos"
+      "videos"
+      "depoimentos";
+    gap: 10px;
+    margin: 20px;
+  }
+
+  .profile {
+    max-width: 250px;
+  }
+
+  .about {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-div {
+    display: none;
+  }
+
+  .dark-light-info {
+    height: calc(100% - 400px);
+  }
+
+  .dark-light-info div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grey {
+    min-width: unset;
+    margin-bottom: 5px;
+  }
+
+  .dark-blue,
+  .light-blue {
+    padding: 5px;
+  }
+
+  .about-items {
+    flex-direction: column;
+    align-items: center;
+  }
 }
