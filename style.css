@@ -89,6 +89,7 @@ input:focus {
 
 .logo {
   width: 75px;
+  height: 100%;
   background: linear-gradient(#dfdfdf, #ffffff, #c2c2c2);
   padding: 5.5px 15px 8px 12px;
   margin-left: 20px;
